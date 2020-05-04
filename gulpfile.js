@@ -13,12 +13,13 @@ function bs() {
     });
     watch("./*.html").on('change', browserSync.reload);
     watch("./sass/**/*.sass", serveSass);
+    watch("./sass/**/*.scss", serveSass);
     watch("./js/*.js").on('change', browserSync.reload);
 
 };
 
 function serveSass() {
-   return src('./sass/*.sass')
+   return src('./sass/**/*.sass', './sass/**/*.scss')
     .pipe(sass())
     .pipe(cleanCSS({
         level: 2
@@ -31,3 +32,4 @@ function serveSass() {
 };
 
 exports.serve = bs;
+exports.default = this.serve; 
