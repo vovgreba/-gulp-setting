@@ -1,0 +1,56 @@
+.design 
+    background: $dark
+    &__section-title
+        color: $white
+        margin-bottom: 3.5rem
+    &__card
+        margin-bottom: 7rem
+.section-title
+    &__description
+        max-width: 21.85rem
+        margin: 1rem auto 0 
+        font-size: 1.42rem
+        line-height: 1.92rem
+
+.cards
+    display: flex
+    flex-direction: column
+    align-items: center
+@media screen and (min-width: 768px)
+    // .card
+    //     position: relative
+    //     &__image
+    //         &::before
+    //             content: ''
+    //             position: absolute
+    //             top: 0
+    //             left: 0
+    //             width: 100%
+    //             height: 100%
+    //             background-color: rgba(0, 0, 0, 0.3)
+    .cards
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+    .design
+        background: $white
+        &__section-title
+            color: $dark
+        &__card
+            position: relative
+            flex-basis: 29%
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background-color: rgba(0, 0, 0, 0.3)
+    .section-title
+        &__description
+            max-width: 53rem
+@media screen and (min-width: 930px)
+    .design
+        &__card
+            flex-basis: 31%
