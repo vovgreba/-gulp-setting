@@ -19,3 +19,24 @@
         border: 1px solid #FFFFFF;
         background-color: transparent
         color: $white
+
+.up-btn
+    position: fixed
+    bottom: 3%
+    right: 3%
+    width: 3em
+    height: 3rem
+    background-image: url(../img/arrow-up.svg)
+    background-color: $gold
+    background-repeat: no-repeat
+    background-position: center
+    cursor: pointer
+    opacity: 0
+    visibility: hidden
+    transition: .3s all
+    &.is-show
+        opacity: 1
+        visibility: visible
+    
+
+
