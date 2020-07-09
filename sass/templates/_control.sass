@@ -1,2 +1,77 @@
+.control
+  &__section-title
+    margin-top: -30rem
+  &__video
+    display: flex
+    margin: 2.2rem auto 4.46rem
+    position: relative
+    max-width: 58.357rem
+    min-height: 31rem
+    background: $black url('../img/video-control.jpg') center no-repeat
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: rgba(black, 0.8 )
+  &__text
+    font-family: 'Futura Book'
+    font-weight: normal
+    text-align: center
+    max-width: 40.785rem 
+    font-size: 1.428rem
+    line-height: 2.428rem
+    margin: auto
+    margin-bottom: 4.285rem
+    &::before
+      content: ''
+      display: block
+      margin: auto
+      margin-bottom: 2rem
+      width: 55px
+      height: 2px
+      border-radius: 30px
+      background-color: $gold
+  &__form
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    max-width: 55rem
+    margin: auto
+  &__policy
+    flex-basis: 100%    
+  &__input-group
+    display: flex
+    flex-direction: column
+    flex-basis: 30%
+  &__label
+    margin-bottom: .3rem
+  &__input
+    border: none
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+    padding-bottom: .7rem
+    
+  &__button
+    font-family: 'FuturaDemiCItalic'
+    font-size: 1.07rem
+    line-height: 1.28rem
+    font-weight: 400
+    font-style: italic
+    padding: 1.214rem 4.285rem
+  &__policy
+    display: flex
+    justify-content: center
+    margin-top: 2.4rem 
+.video 
+  &__play
+    position: relative
+    margin: auto
+.label
+  &--dark
+    color: rgba(54, 54, 54, 0.5)
+.input 
+  &--black
+    &::placeholder
+      color: $charcoal
 
     

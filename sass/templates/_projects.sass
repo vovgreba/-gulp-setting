@@ -1,0 +1,77 @@
+.projects
+    padding-top: 9.2rem
+    padding-bottom: 30rem
+.projects-title
+    &__heading
+        font-family: 'Yeseva One', cursive
+        font-size: 1.93rem
+        font-weight: 400
+        letter-spacing: -0.07em
+        line-height: 138.6%
+        text-transform: uppercase
+        margin: 0 0 2.43rem
+        &--primary
+            color: $gold
+    &__world
+        display: flex
+        align-items: center
+        &::after
+           content: ''
+           width: 90px
+           height: 2px
+           margin-left: 2.2rem
+           background-color: $gold
+    &__text
+        max-width: 31.57rem
+        font-size: 1.28rem
+        line-height: 2.07rem
+        margin: 0 0 3rem
+.swiper
+    &-slide
+        display: flex
+        flex-wrap: wrap
+        padding-bottom: 6.57rem
+        &__text
+            flex-basis: 50%
+            margin-bottom: 2.64rem
+        &__heading
+            font-family: 'Yeseva One', cursive
+            font-size: 1.28rem
+            font-weight: 400
+            line-height: 1.78rem
+            text-transform: uppercase
+            color: $gold
+            margin: 0 0 0.64rem
+            
+        &__value
+            display: block
+            font-size: 1.07rem
+            line-height: 1.43rem
+    &-pagination
+        &-bullet
+            background-color: rgba($white, 0.7)
+            &-active
+                background-color: $white
+    &-button
+        &-prev, &-next
+            background-size: 42px
+            width: 42px
+            height: 14px 
+            bottom: 0
+            top: auto
+            &::after
+                display: none
+        &-prev
+            left: 0
+            background: url(../img/arrow-prev.svg) no-repeat  
+        &-next
+            background: url(../img/arrow-next.svg) no-repeat
+.swiper-container-horizontal>.swiper-pagination-bullets
+    width: auto
+    bottom: 0
+            
+
+        
+            
+
+           
