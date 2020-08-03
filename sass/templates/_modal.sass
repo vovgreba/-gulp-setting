@@ -9,6 +9,7 @@
   z-index: 99
 .modal
   position: absolute
+  // background: url('../../img/Vector.svg')
   width: 100%
   top: 50%
   left: 50%
@@ -17,13 +18,12 @@
   background-color: $black
   color: $white
   padding: 2.35rem 3.5rem 1.92rem
-  &::before
-    content: ''
-    position: absolute
-    width: 100%
-    top: 0
-    left: 0
-    background: url('../img/vector.svg') 0 100%
+  // &::before
+  //   content: ''
+  //   position: absolute
+  //   width: 100%
+  //   top: 0
+  //   left: 0
   &__close
     position: absolute
     top: 2.6%
@@ -48,7 +48,7 @@
     &::after
         transform: rotate(45deg)    
   &__title
-    font-family: Yeseva One
+    font-family: 'Yeseva One', cursive
     font-size: 1.35rem
     line-height: 1.79rem
     text-align: center
@@ -60,57 +60,19 @@
     padding: 1.3rem 3.3rem
     margin-left: auto
   &__input
-    background: $black
     font-family: 'FuturaMediumC'
     font-weight: 500
-    font-size: 1.28rem
-    line-height: 1.79rem
+    background: $black
     margin-bottom: 3.38rem
     padding-bottom: 0.5rem
-    border: none
-    border-bottom: 1px solid rgba($white, 0.15)
     &:last-of-type
       margin-bottom: 1rem
+    &-group
+      margin-bottom: 3.38rem      
   &__policy
-    font-size: 1.14rem
-    line-height: 1.57rem
     margin-bottom: 2.55rem
-        
       
-.label
-  &--light
-    color: rgba($white, 0.5) 
-.policy
-  position: relative
-  &__checkbox
-    display: none
-    &:checked 
-      +
-        .policy
-          &__label::before
-            content: ''
-            background-image: url(../img/checkbox.svg)
-            background-repeat: no-repeat
-            background-position: center   
-  &__label
-    &::before
-      content: ''
-      display: inline-block
-      width: 18px
-      height: 18px
-      margin-right: 1.9rem
-      vertical-align: sub
-      background-color: $gold
-      border-radius: 1px 
-.input
-  outline: none
-  &--light
-    color: $white
-    &::placeholder
-      color: $white
-  &:focus
-    &::placeholder
-      color: transparent
+
 @media screen and (max-width: 668px)
   .modal
     max-width: 100%

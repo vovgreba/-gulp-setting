@@ -55,12 +55,36 @@ $(document).ready(function() {
     // Валидация формы
 
     $('.modal__form').validate({
+        errorClass: "invalid",
+        errorElement: "div",
         rules: {
-            userName: "required",
+            userPhone: "required",
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
             userEmail: {
               required: true,
               email: true
             }
+        },
+        messages: {
+            userName: {
+                required: "Заполните поле",
+                minlength: "Имя должно быть не короче 2 символов",
+                maxlength: "Имя должно быть не длинее 15 символов"
+            },
+            userPhone: "Заполните поле",
+            userEmail: {
+              required: "Заполните поле",
+              email: "Введите корректный email в формате name@domain.com"
+            }
         }
     });
+
+    //Маска для телефона
+
+    $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___ __ __"});
 });
+
