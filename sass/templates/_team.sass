@@ -1,4 +1,72 @@
 .team
+  &__img-absolute
+    position: absolute
+    top: -8%
+    left: -13%
+    background-color: $gold
+    padding: 13px
   &__description
     max-width: 32rem
     margin: 1.64rem auto 5.28rem
+  &__cards
+    position: relative
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    font-family: 'Yeseva One', cursive
+    font-style: normal
+    font-weight: normal
+  &__subtitle
+    position: relative
+    max-width: 40.57rem
+    margin: 5.2rem auto 0
+    text-align: center
+    font-size: 1.42rem
+    line-height: 2.4rem
+    color: $charcoal
+    &::before
+      content: ''
+      position: absolute
+      width: 55px
+      height: 2px
+      background-color: $gold
+      top: -5%
+      left: 50%
+      transform: translate(-50%, -50%)
+  &__card
+    position: relative
+    text-align: center
+    // &::before
+    //   content: ''
+    //   position: absolute
+    //   width: 44px
+    //   height: 44px
+    //   padding: 13px
+    //   background: $gold url(../img/team/idea.svg) no-repeat center/cover
+
+    &-description
+      position: relative
+      background-color: $white
+      margin: -7rem 1.42rem 0
+      padding-top: 1.57rem
+    &-experience
+      background-color: $gold
+      margin-top: 1.7rem
+      padding: 1rem 1.64rem
+      font-size: 0.9rem
+      line-height: 1.42rem
+      text-transform: uppercase
+      color: #FFF
+    &-title
+      margin-bottom: 0.64rem
+      font-size: 1.28rem
+      line-height: 1.78rem
+      color: $black
+    &-subtitle
+      font-family: 'Futura Book', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 1.28rem
+      line-height: 1.85rem
+      color: $grey
+
